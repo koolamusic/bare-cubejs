@@ -10,7 +10,7 @@ app.use(bodyParser.json({ limit: '50mb' }));
 const serverCore = CubejsServerCore.create();
 serverCore.initApp(app);
 
-const port = process.env.PORT || 32000;
+const port = process.env.PORT || 4000;
 app.listen(port, (err) => {
   if (err) {
     console.error('Fatal error during server start: ');
